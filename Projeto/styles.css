@@ -418,6 +418,66 @@ body {
     animation: scroll-text 10s linear infinite;
 }
 
+.metodos-pagamento {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.metodos-pagamento h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pagamento-lista {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pagamento-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #071146; /* Fundo cinza claro */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.pagamento-item img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.pagamento-item span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sobre-hostinger {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sobre-hostinger h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sobre-hostinger p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.hostinger-team {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 @keyframes scroll-text {
     0% {
