@@ -4,31 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostinger Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Minha Empresa</div>
-        <ul class="nav-links">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/hostinger-h.png" alt="H Hostinger" class="hostinger-icon">
+                <span>HOSTINGER</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Preços</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Explorar</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Hostinger Horizons <span class="novo">NOVO</span></a></li>
+            </ul>
+            <div class="login-container">
+                <div class="idioma">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Bandeira do Brasil" width="20">
+                    <span>Português</span>
+                </div>
+                <button class="login">Entrar</button>
+            </div>
+        </nav>
 
-    <header class="hero">
-        <h1>Até 80% off: Temos tudo para você decolar online</h1>
-        <p>Publique seu site por R$ 9,99/mês + 3 meses extras e domínio grátis</p>
-        <button class="cta-button">Aproveite a oferta</button>
-        <div class="contador" id="contador">01:06:58</div>
+        <div class="oferta-bar">
+            <div class="oferta-text">
+                <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+                <span class="mes-consumidor">MÊS DO CONSUMIDOR</span>
+                <button class="cta-button">APROVEITAR OFERTA</button>
+                <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+            </div>
+        </div>
     </header>
 
-    <section class="planos">
-        <div class="plano">Plano Básico</div>
-        <div class="plano">Plano Intermediário</div>
-        <div class="plano">Plano Avançado</div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="highlight">Até 80% off:</span>
+                        <span class="light-purple"> Temos tudo para você decolar online</span>
+                    </h1>
+                    <p>
+                        <span class="highlight">Publique seu site por R$ 9,99/mês</span>
+                        <span class="light-purple"> + 3 meses extras e domínio grátis</span>
+                    </p>
+                    <button class="cta-button">Aproveite a oferta</button>
+                    <div class="contador" id="contador">01:06:58</div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/promocao.jpg" alt="Promoção" class="promo-image">
+                </div>
+            </div>
+            <div class="aval-container">
+                <img src="images/avaliacoes.png" alt="Avaliações" class="aval-image">
+            </div>
+        </section>
+
+        <section class="planos">
+            <div class="plano">Plano Básico</div>
+            <div class="plano">Plano Intermediário</div>
+            <div class="plano">Plano Avançado</div>
+        </section>
+    </main>
 
     <footer class="footer">
         <p>Informações da Marca | Métodos de Pagamento</p>

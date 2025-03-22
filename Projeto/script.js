@@ -19,5 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-    startCountdown(3600); // 1 hora de contagem regressiva
+    startCountdown(3600); 
 });
