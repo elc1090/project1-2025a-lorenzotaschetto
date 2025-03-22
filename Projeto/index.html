@@ -6,6 +6,7 @@
     <title>Hostinger Clone</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -18,7 +19,14 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#">Preços</a></li>
-                <li><a href="#">Serviços</a></li>
+                <li class="dropdown">
+                    <a href="#">Serviços <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Hospedagem</a></li>
+                        <li><a href="#">Domínios</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Explorar</a></li>
                 <li><a href="#">Suporte</a></li>
                 <li><a href="#">Hostinger Horizons <span class="novo">NOVO</span></a></li>
@@ -34,10 +42,16 @@
 
         <div class="oferta-bar">
             <div class="oferta-text">
-                <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+                <div class="scrolling-text">
+                    <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+                    <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+                </div>
                 <span class="mes-consumidor">MÊS DO CONSUMIDOR</span>
                 <button class="cta-button">APROVEITAR OFERTA</button>
-                <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+                <div class="scrolling-text">
+                    <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+                    <span class="highlight fonte-oferta">% OFERTA % OFERTA % OFERTA %</span>
+                </div>
             </div>
         </div>
     </header>
@@ -54,7 +68,7 @@
                         <span class="highlight">Publique seu site por R$ 9,99/mês</span>
                         <span class="light-purple"> + 3 meses extras e domínio grátis</span>
                     </p>
-                    <button class="cta-button">Aproveite a oferta</button>
+                    <button class="offer-button">Aproveite a oferta</button>
                     <div class="contador" id="contador">01:06:58</div>
                 </div>
                 <div class="hero-image">
@@ -67,15 +81,61 @@
         </section>
 
         <section class="planos">
-            <div class="plano">Plano Básico</div>
-            <div class="plano">Plano Intermediário</div>
-            <div class="plano">Plano Avançado</div>
+            <div class="plano">
+                <h3>Plano Básico</h3>
+                <p class="preco">R$ 9,99/mês</p>
+                <ul>
+                    <li>1 site</li>
+                    <li>10 GB de armazenamento</li>
+                    <li>Email grátis</li>
+                </ul>
+                <button class="cta-button">Escolher plano</button>
+            </div>
+            <div class="plano">
+                <h3>Plano Intermediário</h3>
+                <p class="preco">R$ 19,99/mês</p>
+                <ul>
+                    <li>5 sites</li>
+                    <li>50 GB de armazenamento</li>
+                    <li>Email grátis</li>
+                </ul>
+                <button class="cta-button">Escolher plano</button>
+            </div>
+            <div class="plano">
+                <h3>Plano Avançado</h3>
+                <p class="preco">R$ 29,99/mês</p>
+                <ul>
+                    <li>Sites ilimitados</li>
+                    <li>100 GB de armazenamento</li>
+                    <li>Email grátis</li>
+                </ul>
+                <button class="cta-button">Escolher plano</button>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>Informações da Marca | Métodos de Pagamento</p>
-        <p>Suporte ao Cliente</p>
+        <div class="suporte-container">
+            <div class="suporte-content">
+                <img src="images/suporte.png" alt="Suporte" class="suporte-illustration">
+                <button class="cta-button">Precisa de ajuda? Fale conosco!</button>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
     </footer>
+
+    <!-- Pop-up de promoção -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2>Promoção especial!</h2>
+            <p>Ganhe 3 meses extras com o plano anual.</p>
+            <button class="cta-button">Aproveitar</button>
+        </div>
+    </div>
 </body>
 </html>

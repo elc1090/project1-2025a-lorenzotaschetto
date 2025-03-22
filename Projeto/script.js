@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Contagem regressiva
     function startCountdown(duration) {
         let timer = duration, hours, minutes, seconds;
         const display = document.getElementById("contador");
@@ -19,5 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-    startCountdown(3600); 
+    startCountdown(3600);
+
+    // Pop-up de promoção
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("close-popup");
+
+    // Exibir popup após 3 segundos
+    setTimeout(() => {
+        popup.style.display = "flex";
+    }, 3000);
+
+    // Fechar popup
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
 });
