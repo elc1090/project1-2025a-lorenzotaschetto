@@ -33,6 +33,38 @@ body {
     align-items: center;
     padding: 15px 20px;
     background: var(--navbar-color);
+    position: relative; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0; 
+    padding: 0;
+    margin: 0;
+    height: 100%; 
+    align-items: center; 
+}
+
+.nav-links > li {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > li > a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s;
+}
+
+.nav-links > li > a:hover {
+    color: var(--highlight-color);
 }
 
 .logo {
@@ -54,23 +86,6 @@ body {
 
 .logo span {
     line-height: 40px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    color: var(--text-color);
-    text-decoration: none;
 }
 
 .novo {
@@ -892,12 +907,19 @@ body {
 /* ====================== */
 .dropdown {
     position: relative;
+    display: inline-block;
 }
 
-.dropdown a {
+.dropdown > a {
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.dropdown > a:hover {
+    color: var(--highlight-color);
 }
 
 .dropdown i {
@@ -914,31 +936,108 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--navbar-color);
-    padding: 10px;
-    border-radius: 5px;
-    list-style: none;
-    margin: 0;
-    min-width: 150px;
+    background: #2a2a3a;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-width: 400px;
     z-index: 1000;
-}
-
-.dropdown-menu li {
-    margin: 5px 0;
-}
-
-.dropdown-menu a {
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
-    padding: 5px 10px;
-}
-
-.dropdown-menu a:hover {
-    background: var(--highlight-color);
-    border-radius: 5px;
+    animation: fadeIn 0.3s ease-out;
+    border: 1px solid rgba(122, 92, 255, 0.2);
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dropdown-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.dropdown-title {
+    color: var(--highlight-color);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(122, 92, 255, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-title i {
+    font-size: 1.2em;
+    color: var(--light-purple-color);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    margin-bottom: 12px;
+}
+
+.dropdown-menu a {
+    color: var(--light-purple-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    font-size: 0.95em;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(122, 92, 255, 0.15);
+    color: white;
+    transform: translateX(5px);
+}
+
+.dropdown-menu a i {
+    font-size: 1.1em;
+    color: var(--highlight-color);
+    width: 20px;
+    text-align: center;
+}
+
+.dropdown-highlight {
+    background: rgba(122, 92, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 3px solid var(--highlight-color);
+}
+
+.dropdown-highlight a {
+    color: white !important;
+    font-weight: bold;
+}
+
+.dropdown-highlight .novo {
+    background: rgba(7, 228, 217, 0.2);
+    color: var(--novo-color);
+    padding: 2px 8px;
+    font-size: 0.7em;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
