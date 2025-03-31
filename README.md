@@ -11,6 +11,9 @@
 
 <img src="images/Projeto.jpg" alt="Screenshot do projeto" title="Screenshot do projeto">
 <img src="images/Projeto2.jpg" alt="Screenshot do projeto" title="Screenshot do projeto">
+<img src="images/Projeto3.jpg" alt="Screenshot do projeto" title="Screenshot do projeto">
+
+Acesso: Substitua este texto pela URL para acesso ao site publicado
 
 #### Desenvolvedor(a)
 Lorenzo Sacchet Taschetto - Ciência da Computação
