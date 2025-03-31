@@ -441,7 +441,7 @@ body {
     text-align: center;
     margin: 40px 0;
     height: 150px;
-    background-color: var(--navbar-color); /* Adicione esta linha */
+    background-color: var(--navbar-color);
 }
 
 .metodos-pagamento h2 {
@@ -477,7 +477,7 @@ body {
 }
 
 /* ====================== */
-/* SOBRE A HOSTINGER - LAYOUT OTIMIZADO */
+/* SOBRE A HOSTINGER */
 /* ====================== */
 .sobre-hostinger {
     padding: 80px 0;
@@ -597,85 +597,20 @@ body {
     gap: 8px;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-    .sobre-hostinger-container {
-        flex-direction: column;
-        gap: 40px;
-        padding: 0 30px;
-    }
-    
-    .sobre-hostinger h2 {
-        font-size: 36px;
-    }
-    
-    .hostinger-team {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .sobre-hostinger {
-        padding: 60px 0;
-    }
-    
-    .sobre-hostinger-container {
-        padding: 0 20px;
-        gap: 30px;
-    }
-    
-    .sobre-hostinger h2 {
-        font-size: 32px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    
-    .destaque {
-        font-size: 16px;
-    }
-    
-    .vantagens-container {
-        padding: 20px;
-    }
-    
-    .vantagens-titulo {
-        font-size: 20px;
-    }
-    
-    .chamada-final {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .sobre-hostinger h2 {
-        font-size: 28px;
-    }
-    
-    .vantagem-item {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .hostinger-team {
-        max-width: 100%;
-    }
-}
 /* ====================== */
-/* FAIXA DE DESTAQUE (ATUALIZADA) */
+/* FAIXA DE DESTAQUE */
 /* ====================== */
 .faixa-destaque {
-    min-height: 400px; /* Altura mínima garantida */
-    height: auto; /* Cresce conforme o conteúdo */
+    min-height: 400px;
+    height: auto;
     width: 100%;
     background-color: hwb(246 13% 62%);
     margin-top: 30px;
     border-radius: 5px;
     animation: pulse-faixa 4s infinite alternate;
-    padding: 60px 20px; /* Aumentei o padding vertical */
+    padding: 60px 20px;
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
 }
 
 .faixa-conteudo {
@@ -683,18 +618,18 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 60px; /* Aumentei o gap entre imagem e texto */
+    gap: 60px;
     width: 100%;
 }
 
 .faixa-imagem {
     flex: 1;
-    min-width: 300px; /* Largura mínima para a imagem */
+    min-width: 300px;
 }
 
 .faixa-imagem img {
     width: 100%;
-    max-width: 550px; /* Aumentei um pouco o máximo */
+    max-width: 550px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -705,63 +640,108 @@ body {
     flex: 1;
     text-align: left;
     color: white;
-    padding: 20px 0; /* Padding interno para o texto */
+    padding: 20px 0;
 }
 
 .faixa-texto h3 {
-    font-size: 2.2em; /* Aumentei o tamanho */
+    font-size: 2.2em;
     margin-bottom: 25px;
     color: var(--light-purple-color);
     line-height: 1.3;
 }
 
 .faixa-texto p {
-    font-size: 1.3em; /* Aumentei o tamanho */
+    font-size: 1.3em;
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
-/* Responsividade */
-@media (max-width: 992px) {
-    .faixa-destaque {
-        min-height: 350px;
-        padding: 40px 20px;
-    }
-    
-    .faixa-conteudo {
-        gap: 40px;
-    }
+/* ====================== */
+/* SEÇÃO SUPORTE 24H */
+/* ====================== */
+.suporte-24h {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 80px 0;
+    color: white;
+    border-top: 1px solid rgba(122, 92, 255, 0.2);
+    border-bottom: 1px solid rgba(122, 92, 255, 0.2);
 }
 
-@media (max-width: 768px) {
-    .faixa-destaque {
-        min-height: auto;
-        padding: 30px 15px;
-    }
-    
-    .faixa-conteudo {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .faixa-texto {
-        text-align: center;
-        padding: 0;
-    }
-    
-    .faixa-texto h3 {
-        font-size: 1.8em;
-        margin-bottom: 15px;
-    }
-    
-    .faixa-texto p {
-        font-size: 1.1em;
-    }
-    
-    .faixa-imagem {
-        min-width: auto;
-        width: 100%;
-    }
+.suporte-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.suporte-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.suporte-texto {
+    flex: 1;
+}
+
+.suporte-imagem {
+    flex: 1;
+}
+
+.suporte-imagem img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.suporte-24h h2 {
+    font-size: 36px;
+    color: var(--light-purple-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.suporte-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.suporte-lista li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.suporte-icone {
+    font-size: 24px;
+    margin-top: 5px;
+    color: var(--highlight-color);
+}
+
+.suporte-lista p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.depoimento {
+    background: rgba(122, 92, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px 0;
+    border-left: 4px solid var(--highlight-color);
+}
+
+.depoimento p {
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.depoimento p:last-child {
+    margin-bottom: 0;
 }
 
 /* ====================== */
@@ -838,7 +818,7 @@ body {
 }
 
 .suporte-illustration {
-    width: 70px;  
+    width: 70px;
     height: 70px;
 }
 
@@ -852,11 +832,6 @@ body {
     cursor: pointer;
 }
 
-/* Redes Sociais Pequenas */
-.social-container {
-    margin-top: 15px;
-}
-
 .social-icons {
     display: flex;
     justify-content: center;
@@ -865,7 +840,7 @@ body {
 }
 
 .social-icons img {
-    width: 50px; 
+    width: 50px;
     height: 50px;
     opacity: 0.8;
     transition: opacity 0.2s;
@@ -879,7 +854,6 @@ body {
     font-size: 1.5em;
     color: #777;
 }
-
 
 /* ====================== */
 /* POPUP */
@@ -967,60 +941,4 @@ body {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-/* ====================== */
-/* RESPONSIVIDADE */
-/* ====================== */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-    }
-
-    .hero-text h1, .hero-text p {
-        font-size: 1.5em;
-    }
-
-    .oferta-bar {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px;
-    }
-    
-    .scrolling-text {
-        order: 1;
-        width: 100%;
-        text-align: center;
-        margin: 5px 0;
-    }
-    
-    .mes-consumidor {
-        order: 2;
-        margin: 5px 10px;
-    }
-    
-    .cta-button {
-        order: 3;
-        margin: 5px 0;
-    }
-
-    .plano-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .plano-card {
-        width: 90%;
-        max-width: 350px;
-    }
 }
