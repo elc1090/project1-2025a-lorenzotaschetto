@@ -19,19 +19,19 @@ Thales Stamm
 https://www.hostinger.com.br/
 
 ##### Descrição
-Dropdowns completos: Links organizados por categorias (Hospedagem, Domínios, Email, etc.).
-Barra de promoção: Mostra ofertas temporárias (ex: "80% OFF + Domínio Grátis").
-Idioma/login: Selector de idioma e botão de login visíveis.
-Contador de promoção: Timer regressivo para criar urgência.
-Planos de Hospedagem
-Depoimentos e Avaliações: Fotos e comentários reais.
-Selo de confiança: Selos como "Melhor Custo-Benefício 2024".
-Rodapé
-Links organizados: +50 links categorizados (Hospedagem, Ajuda, Empresa).
-Métodos de pagamento: Ícones de cartões, Pix, boleto.
-Certificados de segurança: Reclame Aqui, Google Trusted Store.
-Cores: Roxo como cor primária.
-Gradientes e sombras: Efeitos modernos em botões e cards.
+- Dropdowns completos: Links organizados por categorias (Hospedagem, Domínios, Email, etc.).
+- Barra de promoção: Mostra ofertas temporárias (ex: "80% OFF + Domínio Grátis").
+- Idioma/login: Selector de idioma e botão de login visíveis.
+- Contador de promoção: Timer regressivo para criar urgência.
+- Planos de Hospedagem
+- Depoimentos e Avaliações: Fotos e comentários reais.
+- Selo de confiança: Selos como "Melhor Custo-Benefício 2024".
+- Rodapé
+- Links organizados: +50 links categorizados (Hospedagem, Ajuda, Empresa).
+- Métodos de pagamento: Ícones de cartões, Pix, boleto.
+- Certificados de segurança: Reclame Aqui, Google Trusted Store.
+- Cores: Roxo como cor primária.
+- Gradientes e sombras: Efeitos modernos em botões e cards.
 
 #### Demanda do(a) cliente
 As demandas são uma navbar com uma caixinha de opções estilo dropdown, uma janela pop up de promoção, na tela principal fala mais sobre a promoção e tem uma contagem regressiva, abaixo seriam três "cartões", cada um falando de um tipo de planos de serviço e abaixo ficariam informações da marca (resumido), métodos de pagamento, uma área/botão para suporte com ilustração do atendimento e também ícones que redirecionam para redes sociais (no caso do exemplo ficariam só de enfeite). (Todas as demandas estão disponíveis no site)
